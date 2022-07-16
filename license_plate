@@ -1,0 +1,12 @@
+start_interval = int(input())
+end_interval = int(input())
+
+for i in range(start_interval, end_interval + 1):
+    for j in range(start_interval, end_interval + 1):
+        for k in range(start_interval, end_interval + 1):
+            for n in range(start_interval, end_interval + 1):
+                middle_sum = j + k
+                if i > n and i % 2 != 0 and n % 2 == 0 and middle_sum % 2 == 0:
+                    print(f"{i}{j}{k}{n}", end=" ")
+                elif i > n and i % 2 == 0 and n % 2 != 0 and middle_sum % 2 == 0:
+                    print(f"{i}{j}{k}{n}", end=" ")
