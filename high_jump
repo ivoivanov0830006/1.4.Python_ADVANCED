@@ -1,0 +1,28 @@
+stick_needed_height = int(input())
+stick_current_height = stick_needed_height - 30
+training_is_failed = False
+is_completed = False
+jumps_count = 0
+jump_fails = 0
+current_height = int(input())
+
+while not is_completed:
+    jumps_count += 1
+    if current_height > stick_needed_height:
+        is_completed = True
+        break
+    if current_height > stick_current_height:
+        jump_fails = 0
+        stick_current_height += 5
+    else:
+        jump_fails += 1
+        if jump_fails == 3:
+            training_is_failed = True
+            break
+    if training_is_failed:
+        break
+    current_height = int(input())
+if is_completed:
+    print(f"Tihomir succeeded, he jumped over {stick_current_height}cm after {jumps_count} jumps.")
+if training_is_failed:
+    print(f"Tihomir failed at {stick_current_height}cm after {jumps_count} jumps.")
