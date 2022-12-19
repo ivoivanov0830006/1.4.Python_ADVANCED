@@ -16,3 +16,19 @@ while len(children) > 1:
 
 last_child = children.popleft()
 print(f"Last is {last_child}")
+
+
+# ------------------------------------- Another Solution -----------------------------
+#
+# from collections import deque
+#
+# children = deque(input().split())
+# kicked_child = int(input())
+#
+# while len(children) > 1:
+#     children.rotate(-kicked_child)
+#     child = children.pop()
+#     print(f"Removed {child}")
+#
+# last_child = children.popleft()
+# print(f"Last is {last_child}")
