@@ -12,7 +12,7 @@ print(matrix)
 
 
 """
-------------------------------------- Problem to resolve ------------------------------
+------------------------------------ Problem to resolve --------------------------------
 
 Write a program that receives a matrix of numbers and prints a new one only with the numbers that
 are even. Use nested comprehension for that problem.
