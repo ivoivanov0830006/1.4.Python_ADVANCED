@@ -3,6 +3,18 @@ rows = int(input())
 matrix = []
 for _ in range(rows):
     row = [int(x) for x in input().split(", ")]
+    matrix.append([number for number in row if number % 2 == 0])
+
+print(matrix)
+
+"""
+------------------------------------- Another Solution ---------------------------------
+
+rows = int(input())
+
+matrix = []
+for _ in range(rows):
+    row = [int(x) for x in input().split(", ")]
     new_row = []
     for number in row:
         if number % 2 == 0:
@@ -10,8 +22,6 @@ for _ in range(rows):
     matrix.append(new_row)
 print(matrix)
 
-
-"""
 ------------------------------------ Problem to resolve --------------------------------
 
 Write a program that receives a matrix of numbers and prints a new one only with the numbers that
