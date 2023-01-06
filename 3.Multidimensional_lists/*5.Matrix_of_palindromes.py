@@ -10,3 +10,12 @@ for r in range(rows):
 
 for row in matrix:
     print(*row)
+
+    
+rows, columns = list(map(int, input().split()))
+
+for r in range(97, rows + 97):
+    for c in range(columns):
+        palindrome = f'{chr(r)}{chr(r + c)}{chr(r)}'
+        print(palindrome, end=' ')
+    print()
