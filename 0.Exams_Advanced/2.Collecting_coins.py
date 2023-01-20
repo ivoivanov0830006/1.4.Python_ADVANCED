@@ -99,3 +99,52 @@ The player's path as coordinates in lists on separate lines:
 Constrains
 There will be no case in which less than 100 coins will be in the field
 All given numbers will be valid integers in the range [0, 100]
+-------------------------------------- Example inputs ----------------------------------
+Input	
+5
+1 X 7 9 11
+X 14 46 62 0
+15 33 21 95 X
+P 14 3 4 18
+9 20 33 X 0
+left
+right
+right
+up
+up
+right	
+Output
+You won! You've collected 125 coins.
+Your path:
+[3, 0]
+[3, 4]
+[3, 0]
+[3, 1]
+[2, 1]
+[1, 1]
+[1, 2]
+---------------------------------------------
+Input	
+8
+13 18 9 7 24 41 52 11
+54 21 19 X 6 4 75 6
+76 5 7 1 76 27 2 37
+92 3 25 37 52 X 56 72
+15 X 1 45 45 X 7 63
+1 63 P 2 X 43 5 1
+48 19 35 20 100 27 42 80
+73 88 78 33 37 52 X 22
+up
+down
+up
+left	
+Output
+Game over! You've collected 0 coins.
+Your path:
+[5, 2]
+[4, 2]
+[5, 2]
+[4, 2]
+[4, 1]
+
+"""
