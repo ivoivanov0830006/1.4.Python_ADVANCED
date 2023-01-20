@@ -77,3 +77,60 @@ if win:
     print(f"{winner} found the Exit and wins the game!")
 if trap:
     print(f"{loser} is out of the game! The winner is {winner}.")
+-------------------------------------- Example inputs ----------------------------------
+Input	
+Tom, Jerry
+. . T . . .
+. . . . . .
+. . W . . .
+. . W . . E
+. . . . . .
+. T . W . .
+(3, 2)
+(1, 3)
+(5, 1)
+(5, 1)	
+Output
+Tom hits a wall and needs to rest.
+Jerry is out of the game! The winner is Tom.	
+----------------------------------------------
+Input	
+Jerry, Tom
+. T . . . W
+. . . . T .
+. W . . . T
+. T . E . .
+. . . . . T
+. . T . . .
+(1, 1)
+(3, 0)
+(3, 3)	
+Output
+Jerry found the Exit and wins the game!	
+----------------------------------------------
+Input
+Jerry, Tom
+. . . W . .
+. . T T . .
+. . . . . .
+. T . W . .
+W . . . E .
+. . . W . .
+(0, 3)
+(3, 3)
+(1, 3)
+(2, 2)
+(3, 5)
+(4, 0)
+(5, 3)
+(3, 1)
+(4, 4)
+(4, 4)	
+Output
+Jerry hits a wall and needs to rest.
+Tom hits a wall and needs to rest.
+Tom hits a wall and needs to rest.
+Jerry hits a wall and needs to rest.
+Tom found the Exit and wins the game!	
+
+"""
