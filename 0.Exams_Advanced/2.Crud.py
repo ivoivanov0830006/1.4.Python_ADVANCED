@@ -85,11 +85,81 @@ The direction could be "up", "down", "left" or "right"
 If you step on a letter or number, print it on the console
 If the position is empty, do NOT read it
 You can make only ONE move at a time in the given direction for each command given.
-In the end, print the final matrix.
-
-Output
 In the end, print the final matrix, each row on a new line, each position separated by a single space.
 Constraints
 You will always receive valid coordinates
 You will always receive directions in the range of the table
 You will always receive letters or numbers
+-------------------------------------- Example inputs ----------------------------------
+Input	
+. . . . . .
+. 6 . . . .
+G . S . t S
+. . 10 . . .
+. 95 . . 8 .
+. . P . . .
+(1, 1)
+Create, down, r
+Update, right, e
+Create, right, a
+Read, right
+Delete, right
+Stop	
+Output
+t
+. . . . . .
+. 6 . . . .
+G r e a t .
+. . 10 . . .
+. 95 . . 8 .
+. . P . . .	
+-----------------------
+Input
+. . . . . .  
+. 6 . . . .  
+. T . D . O  
+. . 10 A . .  
+. 95 . 80 5 .  
+. . P . t .   
+(2, 3)
+Create, down, o
+Delete, right
+Read, up
+Create, left, 20
+Update, up, P
+Stop	
+Output
+. . . . . .
+. 6 . . . .
+. T . D . O
+. . 10 A . .
+. 95 . 80 5 .
+. . P . t .	
+------------------------
+Input
+H 8 . . . .
+70 i . . . .
+t . . . B .
+50 . 16 . C .
+. . . t . .
+. 25 . . . .
+(0, 0)
+Read, right
+Read, down
+Read, left
+Delete, down
+Create, right, 10
+Read, left
+Stop	
+Output
+8
+i
+70
+H 8 . . . .
+70 i . . . .
+. 10 . . B .
+50 . 16 . C .
+. . . t . .
+. 25 . . . .	
+
+"""
