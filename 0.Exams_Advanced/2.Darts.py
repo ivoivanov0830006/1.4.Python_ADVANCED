@@ -68,13 +68,13 @@ if p2_wins:
 
 You will be given a matrix with 7 rows and 7 columns representing the dartboard. For example:
 
-1	2	3	4	5	6	7
-24	D	D	D	D	D	8
-23	D	T	T	T	D	9
-22	D	T	B	T	D	10
-21	D	T	T	T	D	11
-20	D	D	D	D	D	12
-19	18	17	16	15	14	13
+        1	2	3	4	5	6	7
+        24	D	D	D	D	D	8
+        23	D	T	T	T	D	9
+        22	D	T	B	T	D	10
+        21	D	T	T	T	D	11
+        20	D	D	D	D	D	12
+        19	18	17	16	15	14	13
 
 Each of the two players starts with a score of 501 and they take turns to throw a dart – one throw
 for each player. The score for each turn is deducted from the player’s total score. The first 
@@ -99,3 +99,37 @@ There will always be exactly 7 lines
 There will always be a winner
 The points will be in range [1, 24]
 The coordinates will be in range [0, 100]    
+-------------------------------------- Example inputs ----------------------------------
+Input	
+Ivan, Peter
+12 21 18 4 20 7 11
+9 D D D D D 10
+15 D T T T D 3
+2 D T B T D 19
+17 D T T T D 6
+22 D D D D D 14
+5 8 23 13 16 1 24
+(3, 3)	
+Output
+Ivan won the game with 1 throws!
+--------------------------------------
+Input	
+George, Hristo
+17 8 21 6 13 3 24
+16 D D D D D 14
+7 D T T T D 15
+23 D T B T D 2
+9 D T T T D 22
+19 D D D D D 10
+12 18 4 20 5 11 1
+(1, 0)
+(2, 3)
+(0, 0)
+(4, 2)
+(5, 1)
+(3, 1)
+(0, 0)
+(2, 3)
+Output
+Hristo won the game with 4 throws!	
+"""
