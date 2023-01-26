@@ -95,3 +95,29 @@ Output
 Constraints
     ⦁	All the elves' values will be integers in the range [1, 100]
     ⦁	All the boxes' values will be integers in the range [1, 100]
+-------------------------------------- Example inputs ----------------------------------
+Input	
+10 16 13 25
+12 11 8	
+Output
+Toys: 3
+Energy: 31
+Elves left: 3, 6, 26, 14	
+----------------------------
+Input
+10 14 22 4 5
+11 16 17 11 1 8
+Output
+Toys: 7
+Energy: 75
+Elves left: 10, 14	
+----------------------------
+Input	
+5 6 7
+2 1 5 7 5 3	
+Output
+Toys: 3
+Energy: 20
+Boxes left: 2, 1
+
+"""
