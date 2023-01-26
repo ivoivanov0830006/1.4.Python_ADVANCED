@@ -122,6 +122,6 @@ Gemstone: 1
 200
 5 15 32 20 10 5	Aladdin does not have enough wedding presents.
 Magic left: 15, 32, 20, 10, 5
-Porcelain Sculpture: 1	
+Porcelain Sculpture: 1
 
 """
