@@ -103,3 +103,25 @@ On the next lines, print the gifts alphabetically that the Genie has crafted at 
 Constraints
 All the materials values will be integers in the range [1, 1000]
 Magic level values will be integers in the range [1, 1000]
+-------------------------------------- Example inputs ----------------------------------
+Input	
+105 20 30 25
+120 60 11 400 10 1	
+Output
+The wedding presents are made!
+Magic left: 10, 1
+Gemstone: 1
+-----------------
+Input	
+30 5 21 6 0 91
+15 9 5 15 8	
+Output
+Aladdin does not have enough wedding presents.
+Materials left: 30
+Gemstone: 1	
+200
+5 15 32 20 10 5	Aladdin does not have enough wedding presents.
+Magic left: 15, 32, 20, 10, 5
+Porcelain Sculpture: 1	
+
+"""
