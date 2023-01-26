@@ -57,7 +57,7 @@ You will be given two sequences of integers, representing bomb effects and bomb 
 You need to start from the first bomb effect and try to mix it with the last bomb casing. If the sum 
 of their values is equal to any of the materials in the table below – create the bomb corresponding 
 to the value and remove both bomb materials. Otherwise, just decrease the value of the bomb casing by 5.
-You need to stop combining when you have no more bomb effects or bomb casings, or you successfully 
+You need to stop combining when you have no more bomb effects or bomb casings, or you successfully
 filled the bombs pouch.
 Bombs:
     ⦁	Datura Bombs: 40
