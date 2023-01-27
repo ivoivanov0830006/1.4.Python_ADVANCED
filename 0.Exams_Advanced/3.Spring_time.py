@@ -51,3 +51,62 @@ Return the result, sorted as described above in the format:
     {type_N}:
     …
     -{last_spring_object_of_typeN}"
+-------------------------------------- Example inputs ----------------------------------
+Test Code	
+example_objects = {"Water Lilly": "flower",
+                   "Swifts": "bird",
+                   "Callery Pear": "tree",
+                   "Swallows": "bird",
+                   "Dahlia": "flower",
+                   "Tulip": "flower",}
+print(start_spring(**example_objects))	
+Output
+flower:
+-Dahlia
+-Tulip
+-Water Lilly
+bird:
+-Swallows
+-Swifts
+tree:
+-Callery Pear
+--------------------------------------------
+Test Code
+example_objects = {"Swallow": "bird",
+                   "Thrushes": "bird",
+                   "Woodpeckers": "bird",
+                   "Swallows": "bird",
+                   "Warblers": "bird",
+                   "Shrikes": "bird",}
+print(start_spring(**example_objects))	
+Output
+bird:
+-Shrikes
+-Swallow
+-Swallows
+-Thrushes
+-Warblers
+-Woodpeckers
+--------------------------------------------
+Test Code
+example_objects = {"Magnolia": "tree",
+                   "Swallow": "bird",
+                   "Thrushes": "bird",
+                   "Pear": "tree",
+                   "Cherries": "tree",
+                   "Shrikes": "bird",
+                   "Butterfly": "insect"}
+print(start_spring(**example_objects))	
+Output
+bird:
+-Shrikes
+-Swallow
+-Thrushes
+tree:
+-Cherries
+-Magnolia
+-Pear
+insect:
+-Butterfly
+
+"""
