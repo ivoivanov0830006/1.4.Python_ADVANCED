@@ -43,3 +43,39 @@ The function should return a string in the format "{key} - {value}" for each key
 Constraints:
 There will be no case with capital letters.
 There will be no case with a string consisting of other than letters.
+-------------------------------------- Example inputs ----------------------------------
+Test Code	
+print(
+    words_sorting(
+        'escape', 
+        'charm', 
+        'mythology'
+  ))	
+Output  
+charm - 523
+escape - 625
+mythology - 1004
+---------------------------------
+Test Code
+print(
+    words_sorting(
+        'escape',
+        'charm',
+        'eye'
+  ))	
+Output   
+escape - 625
+charm - 523
+eye - 323	
+-----------------------------------
+Test Code
+print(
+    words_sorting(
+        'cacophony',         
+        'accolade'
+  ))	
+Output  
+accolade - 812
+cacophony - 964	
+
+"""
