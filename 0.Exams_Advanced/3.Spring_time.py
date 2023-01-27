@@ -15,3 +15,11 @@ def start_spring(**kwargs):
             result += f"-{obj}\n"
     return result
 
+
+example_objects = {"Water Lilly": "flower",
+                   "Swifts": "bird",
+                   "Callery Pear": "tree",
+                   "Swallows": "bird",
+                   "Dahlia": "flower",
+                   "Tulip": "flower", }
+print(start_spring(**example_objects))
