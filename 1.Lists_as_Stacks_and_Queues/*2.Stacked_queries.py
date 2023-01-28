@@ -16,22 +16,24 @@ for _ in range(count):
         if stack:
             stack.pop()
     elif query == "3":
-        for number in stack:
-            if number > max_number:
-                max_number = number
-        print(max_number)
+        if stack:
+            for number in stack:
+                if number > max_number:
+                    max_number = number
+            print(max_number)
     elif query == "4":
-        for number in stack:
-            if number < min_number:
-                min_number = number
-        print(min_number)
+        if stack:
+            for number in stack:
+                if number < min_number:
+                    min_number = number
+            print(min_number)
 
 final_stack = []
 
 for i in range(len(stack)):
     final_stack.append(stack.pop())
 
-print(" ".join(list(map(str, final_stack))))
+print(", ".join(list(map(str, final_stack))))
 
 
 """
