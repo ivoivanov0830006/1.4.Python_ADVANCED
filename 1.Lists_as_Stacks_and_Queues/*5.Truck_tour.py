@@ -44,3 +44,35 @@ while pump_data_copy:
         gas_in_tank -= distance
 
 print(index)
+
+
+------------------------------------- Another Solution -----------------------------
+
+from collections import deque
+
+pumps_count = int(input())
+pumps = deque()
+
+
+for _ in range(pumps_count): 
+    pump_data = [int(x) for x in input().split()]
+    pumps.append(pump_data)
+
+for index in range(pumps_count):
+    current_petrol = 0
+    failed = False
+    for fuel, distance in pumps:
+        current_petrol += fuel
+        if distance > current_petrol:
+            failed = True
+            break
+
+        else:
+            current_petrol -= distance
+    if failed:
+        # pumps.append(pumps.popleft())
+        pumps.rotate(-1)
+    else:
+        print(index)
+        break
+        
