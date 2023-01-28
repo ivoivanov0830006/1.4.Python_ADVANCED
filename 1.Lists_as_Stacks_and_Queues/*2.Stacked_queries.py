@@ -69,10 +69,10 @@ It is guaranteed that each query is valid.
 After you go through all the queries, print the stack from top to bottom in the following format:
 "{n}, {n1}, {n2}, ... {nn}"
 -------------------------------------- Example inputs ----------------------------------
-Input	                Output
-9                     26
-1 97                  20
-2                     91, 20, 26
+Input	                
+9                     
+1 97                  
+2                     
 1 20
 2
 1 26
@@ -80,11 +80,16 @@ Input	                Output
 3
 1 91
 4
+Output
+26
+20
+91, 20, 26
 -------------------------------------
-10                    32
-2                     66
-1 47                  8
-1 66                  8, 16, 25, 32, 66, 47
+Input
+10                    
+2                     
+1 47                  
+1 66                  
 1 32
 4
 3
@@ -92,5 +97,10 @@ Input	                Output
 1 16
 1 8
 4
+Output
+32
+66
+8
+8, 16, 25, 32, 66, 47
 
 """
