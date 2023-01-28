@@ -34,57 +34,61 @@ for i in range(len(stack)):
 print(" ".join(list(map(str, final_stack))))
 
 
-# ------------------------------------- Another Solution -----------------------------
-# from collections import deque
-#
-# numbers = deque()
-# map_functions = {
-#     1: lambda x: numbers.append(x[1]),
-#     2: lambda x: numbers.pop() if numbers else None,
-#     3: lambda x: print(max(numbers)),
-#     4: lambda x: print(min(numbers)),
-# }
-#
-# for _ in range(int(input())):
-#     number_data = [int(x) for x in input().split()]
-#     map_functions[number_data[0]](number_data)
-#
-# numbers.reverse()
-#
-# print(*numbers, sep=", ")
-#
-# ------------------------------------- Problem to resolve ------------------------------
-#
-# You have an empty stack. You will receive an integer – N. On the next - N lines, you will receive
-# queries. Each query is one of these four types:
-# '1 {number}' – push the number (integer) into the stack
-# '2' – delete the number at the top of the stack
-# '3' – print the maximum number in the stack
-# '4' – print the minimum number in the stack
-# It is guaranteed that each query is valid.
-# After you go through all the queries, print the stack from top to bottom in the following format:
-# "{n}, {n1}, {n2}, ... {nn}"
-# -------------------------------------- Example inputs ----------------------------------
-# Input	                Output
-# 9                     26
-# 1 97                  20
-# 2                     91, 20, 26
-# 1 20
-# 2
-# 1 26
-# 1 20
-# 3
-# 1 91
-# 4
-# -------------------------------------
-# 10                    32
-# 2                     66
-# 1 47                  8
-# 1 66                  8, 16, 25, 32, 66, 47
-# 1 32
-# 4
-# 3
-# 1 25
-# 1 16
-# 1 8
-# 4
+"""
+------------------------------------- Another Solution -----------------------------
+from collections import deque
+
+numbers = deque()
+map_functions = {
+    1: lambda x: numbers.append(x[1]),
+    2: lambda x: numbers.pop() if numbers else None,
+    3: lambda x: print(max(numbers)),
+    4: lambda x: print(min(numbers)),
+}
+
+for _ in range(int(input())):
+    number_data = [int(x) for x in input().split()]
+    map_functions[number_data[0]](number_data)
+
+numbers.reverse()
+
+print(*numbers, sep=", ")
+
+
+------------------------------------- Problem to resolve ------------------------------
+
+You have an empty stack. You will receive an integer – N. On the next - N lines, you will receive
+queries. Each query is one of these four types:
+'1 {number}' – push the number (integer) into the stack
+'2' – delete the number at the top of the stack
+'3' – print the maximum number in the stack
+'4' – print the minimum number in the stack
+It is guaranteed that each query is valid.
+After you go through all the queries, print the stack from top to bottom in the following format:
+"{n}, {n1}, {n2}, ... {nn}"
+-------------------------------------- Example inputs ----------------------------------
+Input	                Output
+9                     26
+1 97                  20
+2                     91, 20, 26
+1 20
+2
+1 26
+1 20
+3
+1 91
+4
+-------------------------------------
+10                    32
+2                     66
+1 47                  8
+1 66                  8, 16, 25, 32, 66, 47
+1 32
+4
+3
+1 25
+1 16
+1 8
+4
+
+"""
