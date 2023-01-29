@@ -23,6 +23,8 @@ for index in range(pumps_count):
 
         
 """
+------------------------------------- Another Solution -----------------------------
+
 from collections import deque
 
 pump_data = deque([[int(x) for x in input().split()] for _ in range(int(input()))])
