@@ -45,3 +45,31 @@ while parentheses:
             break
 else:
     print("YES")
+    
+
+------------------------------------- Problem to resolve ------------------------------
+
+You will be given a sequence consisting of parentheses. Your job is to determine whether the expression
+is balanced. A sequence of parentheses is balanced if every opening parenthesis has a corresponding
+closing parenthesis that occurs after the former. There will be no interval symbols between the
+parentheses. You will be given three types of parentheses: (), {}, and [].
+  {[()]} - Parentheses are balanced.
+  (){}[] - Parentheses are balanced.
+  {[(])} - Parentheses are NOT balanced.
+-------------------------------------- Example inputs ----------------------------------
+Input	                    
+{[()]}
+Output
+YES
+----------------------
+Input
+{[(])}
+Output	              
+NO
+----------------------
+Input
+{{[[(())]]}}	      
+Output
+YES
+
+"""
