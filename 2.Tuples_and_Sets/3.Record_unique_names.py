@@ -5,34 +5,49 @@ for _ in range(number_names):
     name = input()
     unique_names.add(name)
 
-print("\n".join(unique_names))
+for person in unique_names:
+    print(person)
+    
+    
+"""
+------------------------------------- Problem to resolve ------------------------------
 
-
-# ------------------------------------- Problem to resolve ------------------------------
-#
-# Write a program, which will take a list of names and print only the unique names in the list.
-# The order in which we print the result does not matter.
-# -------------------------------------- Example inputs ----------------------------------
-# Input	            Output
-# 8                 Alan
-# Lee               Joey
-# Joey              Lee
-# Lee               Joe
-# Joe               Peter
-# Alan
-# Alan
-# Peter
-# Joey
-# ------------------------------------------------------
-# 7                 Easton
-# Lyle              Lyle
-# Bruce             Alice
-# Alice             Bruce
-# Easton            Shawn
-# Shawn
-# Alice
-# Shawn
-# -------------------------------------------------------
-# 6                 Adam
-# Adam
-
+Write a program, which will take a list of names and print only the unique names in the list.
+The order in which we print the result does not matter.
+-------------------------------------- Example inputs ----------------------------------
+Input	            
+8                 
+Lee               
+Joey              
+Lee               
+Joe               
+Alan
+Alan
+Peter
+Joey
+Output
+Alan
+Joey
+Lee
+Joe
+Peter
+------------------------------------------------------
+Input
+7                 
+Lyle              
+Bruce             
+Alice             
+Easton            
+Shawn
+Alice
+Shawn
+Output
+Easton
+Lyle
+Alice
+Bruce
+Shawn
+-------------------------------------------------------
+6                 Adam
+Adam
+"""
