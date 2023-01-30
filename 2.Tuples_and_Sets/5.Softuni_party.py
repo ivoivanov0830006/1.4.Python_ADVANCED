@@ -1,5 +1,4 @@
 number_guests = int(input())
-
 vip = set()
 regular = set()
 
@@ -15,15 +14,40 @@ while True:
     command = input()
     if command == "END":
         break
-    guest_type = command[0]
-    if guest_type.isdigit():
+    command_type = command[0]
+    if command_type.isdigit():
         vip.discard(command)
     else:
         regular.discard(command)
 
-print(len(vip.union(regular)))
-print("\n".join(sorted(vip)))
-print("\n".join(sorted(regular)))
+not_arrived_guests = vip.union(regular)
+print(len(not_arrived_guests))
+print("\n".join(sorted(not_arrived_guests)))
+
+
+"""
+------------------------------------- Another Solution -----------------------------
+
+def collect_data_for_arrived_guests():
+    arrived_guests_list = []
+    while True:
+        data = input()
+        if data == "END":
+            break
+        else:
+            arrived_guests_list.append(data)
+    return arrived_guests_list
+
+
+n = int(input())
+guest_reservation_list = [input() for _ in range(n)]
+arrived_guests = collect_data_for_arrived_guests()
+not_arrived_guests = set(guest_reservation_list).difference(arrived_guests)
+
+print(len(not_arrived_guests))
+for guest_number in sorted(not_arrived_guests):
+    print(guest_number)
+    
 
 
 # ------------------------------------- Problem to resolve ------------------------------
