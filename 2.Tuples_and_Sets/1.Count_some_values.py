@@ -1,3 +1,18 @@
+sequence = list(map(float, input().split()))
+all_elements = {}
+
+for element in sequence:
+    if element not in all_elements:
+        all_elements[element] = 0
+    all_elements[element] += 1
+
+for number, count in all_elements.items():     # all_elements.items returns tuples_and_sets
+    print(f"{number:.1f} - {count} times")
+
+
+"""
+------------------------------------- Another Solution -----------------------------
+
 sequence = input().split()
 all_elements = []
 
@@ -7,21 +22,6 @@ for element in sequence:
     if element not in all_elements:
         all_elements.append(element)
         print(f"{number:.1f} - {count} times")
-        
-
-# ------------------------------------- Another Solution -----------------------------
-#
-# sequence = list(map(float, input().split()))
-# all_elements = {}
-#
-# for element in sequence:
-#     if element not in all_elements:
-#         all_elements[element] = 0
-#     all_elements[element] += 1
-#
-# for number, count in all_elements.items():     # all_elements.items returns tuples
-#     print(f"{number:.1f} - {count} times")
-
 
 # ------------------------------------- Problem to resolve ------------------------------
 #
