@@ -7,8 +7,8 @@ for _ in range(number_names):
 
 for person in unique_names:
     print(person)
-    
-    
+
+
 """
 ------------------------------------- Problem to resolve ------------------------------
 
@@ -48,6 +48,9 @@ Alice
 Bruce
 Shawn
 -------------------------------------------------------
-6                 Adam
+Input
+6                 
+Adam
+Output
 Adam
 """
