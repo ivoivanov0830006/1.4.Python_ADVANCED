@@ -22,6 +22,30 @@ for row in max_sub_matrix:
     print(*row, sep=" ")
 
 """
+------------------------------------- Another Solution -----------------------------
+
+rows, columns = [int(x) for x in input().split(' ')]
+matrix = [[int(x) for x in input().split(' ')] for _ in range(rows)]
+
+max_sum = float("-inf")
+max_sub_matrix = []
+for r in range(rows - 2):
+    for c in range(columns - 2):
+        first_row = matrix[r][c:c + 3]
+        second_row = matrix[r + 1][c:c + 3]
+        third_row = matrix[r + 2][c:c + 3]
+
+        sub_matrix_sum = sum(first_row) + sum(second_row) + sum(third_row)
+
+        if sub_matrix_sum > max_sum:
+            max_sum = sub_matrix_sum
+            max_sub_matrix = [first_row, second_row, third_row]
+
+print(f"Sum = {max_sum}")
+for row in max_sub_matrix:
+    print(*row, sep=" ")
+
+
 ------------------------------------ Problem to resolve --------------------------------
 
 Write a program that reads a rectangular matrix's dimensions and finds the 3x3square with a maximum 
