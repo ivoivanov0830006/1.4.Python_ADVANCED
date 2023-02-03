@@ -7,3 +7,16 @@ for idx in range(len(matrix)):
     for number in row:
         flattened_matrix.append(number)
 print(*flattened_matrix)
+
+
+"""
+------------------------------------- Another Solution ---------------------------------
+
+input_sequence = list(input().split("|"))
+sub_lists = []
+
+for sub_string in input_sequence[::-1]:
+    sub_lists.extend(sub_string.split())
+
+print(*sub_lists)
+
