@@ -120,3 +120,33 @@ Constraints
 ⦁	The bomb coordinates will always be in the matrix.
 ⦁	The bomb's values will always be greater than 0.
 ⦁	The integers of the matrix will be in the range [1…10000]. 
+-------------------------------------- Example inputs ----------------------------------
+Input	
+4
+8 3 2 5
+6 4 7 9
+9 9 3 6
+6 8 1 2
+1,2 2,1 2,0	
+Output
+Alive cells: 3
+Sum: 12
+8 -4 -5 -2
+-3 -3 0 2
+0 0 -4 -1
+-3 -1 -1 2	
+------------------
+Input	
+3
+7 8 4
+3 1 5
+6 4 9
+0,2 1,0 2,2	
+Output
+Alive cells: 3
+Sum: 8
+4 1 0
+0 -3 -8
+3 -8 0
+
+"""
