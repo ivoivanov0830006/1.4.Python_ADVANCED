@@ -87,3 +87,38 @@ Output
 Constraints
 ⦁	The field size will be a 32-bit integer in the range [0 … 2 147 483 647]
 ⦁	The field will always have only one "s"
+-------------------------------------- Example inputs ----------------------------------
+Input	
+5
+up right right up right
+* * * c *
+* * * e *
+* * c * *
+s * * c *
+* * c * *	
+Output
+Game over! (1, 3)
+-------------------------------
+Input
+4
+up right right right down
+* * * e
+* * c *
+* s * c
+* * * *	
+Output
+You collected all coal! (2, 3)
+--------------------------------
+Input
+6
+left left down right up left left down down down
+* * * * * *
+e * * * c *
+* * c s * *
+* * * * * *
+c * * * c *
+* * c * * *	
+Output
+3 pieces of coal left. (5, 0)
+
+"""
