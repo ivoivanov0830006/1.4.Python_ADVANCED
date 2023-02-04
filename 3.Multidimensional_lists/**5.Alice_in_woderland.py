@@ -79,3 +79,49 @@ Constraints
 ⦁	Alice will always either go outside the Wonderland or collect 10 bags of tea
 ⦁	All the commands will be valid
 ⦁	All of the given numbers will be valid integers in the range [0, 10]
+-------------------------------------- Example inputs ----------------------------------
+Input	
+5
+. A . . 1
+R . 2 . .
+4 7 . 1 .
+. . . 2 .
+. 3 . . .
+down
+right
+left
+down
+up
+left	
+Output
+Alice didn't make it to the tea party.
+. * . . 1
+* * * . .
+4 * . 1 .
+. . . 2 .
+. 3 . . .
+---------------------------------------
+Input
+7
+. A . 1 1 . .
+9 . . . 6 . 5
+. 6 . R . . .
+. 3 . . 1 . .
+. . . 2 . . 2
+. 3 . . 1 . .
+. 8 3 . . . 2
+left
+down
+down
+right	
+Output
+She did it! She went to the party.
+* * . 1 1 . .
+* . . . 6 . 5
+* * . R . . .
+. 3 . . 1 . .
+. . . 2 . . 2
+. 3 . . 1 . .
+. 8 3 . . . 2
+
+"""
