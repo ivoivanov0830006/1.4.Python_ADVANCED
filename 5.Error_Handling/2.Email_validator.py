@@ -1,3 +1,30 @@
+from re import findall
+
+
+class NameTooShortError(Exception):
+    pass
+
+
+class MustContainAtSymbolError(Exception):
+    pass
+
+
+class InvalidDomainError(Exception):
+    pass
+
+
+class MoreThanOneAtSymbolError(Exception):
+    pass
+
+
+class InvalidNameError(Exception):
+    pass
+
+
+class InvalidDomainNameError(Exception):
+    pass
+
+
 pattern_name = r"[\w+\.]+"
 pattern_domain_extension = r"\.[a-z]+"
 pattern_domain_name = r"(?<=\@)\w{2,}"
