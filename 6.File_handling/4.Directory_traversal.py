@@ -31,3 +31,30 @@ for current_extension, files in extensions:
 
 with open(f"report.txt", "w") as current_file:
     current_file.write("\n".join(result))
+
+    
+"""
+------------------------------------ Problem to resolve --------------------------------
+
+Write a program that traverses a given directory for all files. Search through the first level 
+of the directory only and write information about each found file in report.txt. The files should 
+be grouped by their extension. Extensions should be ordered by name alphabetically. The files with 
+extensions should also be sorted by name. report.txt should be saved in the chosen directory.
+Examples
+Input	
+.	 	
+report.txt
+.html
+- - - index.html
+.js
+- - - index.js
+.pptx
+- - - demo.pptx
+.py
+- - - program.py
+- - - python.py
+.txt
+- - - log.txt
+- - - notes.txt
+
+"""
