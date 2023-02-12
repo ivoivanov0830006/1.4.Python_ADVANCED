@@ -46,8 +46,8 @@ def numbers_searching(*args):
             duplicates.append(x)
 
     return [*missing, sorted(duplicates)]
-
-
+    
+    
 ------------------------------------ Problem to resolve --------------------------------
 
 Write a function called numbers_searching which receives a different amount of parameters. All 
