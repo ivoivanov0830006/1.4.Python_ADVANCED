@@ -15,21 +15,6 @@ print(palindrome("peter", 0))
 
 
 """
-
-------------------------------------- Another Solution ---------------------------------
-
-word = "abcba"
-for idx in range(len(word) // 2):
-    left = word[idx]
-    right = word[-1 - idx]
-    if left != right:
-        print(f"{word} is not palindrome")
-        break
-
-else:
-    print(f"{word} is palindrome")
-
-
 ------------------------------------ Problem to resolve --------------------------------
 
 Write a recursive function called palindrome() that will receive a word and an index (always 0). 
