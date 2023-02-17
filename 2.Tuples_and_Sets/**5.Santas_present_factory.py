@@ -58,7 +58,7 @@ if magic:
 for key, value in sorted(presents.items()):
     if value > 0:
         print(f"{key}: {value}")
-        
+
 
 """
 ------------------------------------- Problem to resolve ------------------------------
@@ -112,9 +112,11 @@ Materials left: 20, -5, 10
 Bicycle: 1
 Teddy bear: 2	
 -----------------------------------------------
-
+Input
 30 5 15 60 0 30
--15 10 5 -15 25	No presents this Christmas!
+-15 10 5 -15 25	
+Output
+No presents this Christmas!
 Materials left: 20, 30
 Doll: 1
 Teddy bear: 1
